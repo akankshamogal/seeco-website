@@ -1,0 +1,63 @@
+.main-navbar {
+  background: linear-gradient(90deg, #021a3b, #013463);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-text {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  color: #e3f2fd !important;
+  opacity: 0.85;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  color: #ffffff !important;
+}
+
+.nav-link.active {
+  position: relative;
+  opacity: 1;
+  color: #ffca28 !important;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #ffca28;
+  border-radius: 999px;
+}
+
+/* CTA Button */
+.quote-btn {
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+/* Scroll effect */
+.main-navbar.scrolled {
+  background: #021324;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}

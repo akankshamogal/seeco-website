@@ -1,0 +1,6 @@
+@Seeco_website.Server_HostAddress = http://localhost:5278
+
+GET {{Seeco_website.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

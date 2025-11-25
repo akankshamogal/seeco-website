@@ -1,0 +1,80 @@
+<nav
+  class="navbar navbar-expand-lg navbar-dark main-navbar fixed-top shadow-sm"
+  [class.scrolled]="isScrolled"
+>
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" routerLink="/">
+      <img
+        src="assets/logo.png"
+        alt="Logo"
+        class="navbar-logo me-2"
+      />
+      <span class="fw-bold brand-text">Seeco</span>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active"
+            >About Us</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services" routerLinkActive="active"
+            >Services</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/projects" routerLinkActive="active"
+            >Projects</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active"
+            >Contact</a
+          >
+        </li>
+
+        <!-- Button -->
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <a
+            routerLink="/contact"
+            class="btn btn-warning fw-semibold px-3 px-lg-4 quote-btn"
+          >
+            Get Quote
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
