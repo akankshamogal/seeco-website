@@ -2,7 +2,8 @@
   background: linear-gradient(90deg, #021a3b, #013463);
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
-  transition: all 0.25s ease-in-out;
+  /* transition: all 0.25s ease-in-out; */
+
 }
 
 .navbar-logo {
